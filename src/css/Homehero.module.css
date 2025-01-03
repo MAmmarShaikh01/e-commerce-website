@@ -1,0 +1,70 @@
+.hero{
+    width: 100vw;
+    background-color: #F2F0FF;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.bulb{
+    width:30%;
+    /* aspect-ratio: 1; */
+}
+ .sofa{
+    width:30%;
+    align-self: center;
+ }
+
+.content{
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    gap: 20px;
+    align-items: baseline;
+}
+
+.pinkPara{
+font-family: sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 28px;
+color: #FB2E86;
+}
+.mainHeading{
+font-family: 'Josefin Sans';
+font-size: 53px;
+line-height: 82px;
+letter-spacing: 0.015em;
+color: #000000;
+}
+.description{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 28px;
+color: #8A8FB9;
+}
+
+.button{
+background: #FB2E86;
+border-radius: 2px;
+padding: 15px 25px;
+color: #F2F0FF;
+font-family: Josefin Sans;
+
+}
+
+@media screen and (max-width: 985px) {
+    .hero{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bulb,.sofa{
+        width: 50%;
+    }
+    .content{
+        width: 70%;
+    }
+}
