@@ -3,20 +3,6 @@ import { Heart, ShoppingCart } from 'lucide-react';
 import { FaSearchPlus } from 'react-icons/fa';
 import { client } from '@/sanity/lib/client';
 
-type p = {
-  name: string;
-  description: string;
-  image: any;
-  productId: string;
-  price: number;
-}
-
-export const  product = async()=>{
-  const query = `*[_type == "product"]{
-  name,description,image,productId,price
-}`
-}
-product()
 
 export default function ProductGrid() {
   return (
